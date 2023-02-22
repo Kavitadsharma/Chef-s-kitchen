@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.cart_item_image img{
+    width: 250px;
+    height: 250px;
+}
+button{
+    color: red;
+}
+.cart_item_remove{
+    padding-bottom: 10px;
+}
+.cart_item_buy{
+    padding-bottom: 50px;
+}
+    </style>
+</head>
+<body>
+    <main id="cart_items">
+        
+    </main>
+    
+</body>
+<script>
+    
+let cart_container = document.querySelector("#cart_items");
+let cart_items = JSON.parse(localStorage.getItem("cart")) || []
+for (let i = 0; i < cart_items.length; i++) {
+    
+    cart_container.innerHTML += html
+}
+
+function RemoveFromCart(productId) {
+    let cart = JSON.parse(localStorage.getItem("cart")) || []
+    let newCart = cart.filter(product => product.id !== productId)
+    localStorage.setItem("cart", JSON.stringify(newCart))
+    window.location.reload()
+}
+function BuyFromCart(productId){
+    // console.log("Gautam")
+    window.alert("Order Placed Successfully");
+    RemoveFromCart(productId);
+
+    }
+    
+    
+
+
+</script>
+</html>
