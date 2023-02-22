@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="/styles/premium_restaurants.css"> -->
+</head>
+<body>
+    <style>
+        #parent{
+    width: 100%;
+    display: flex;
+}
+.fa-solid{
+    padding-left: 25px;
+    color: #999999;
+}
+.location{
+    font-size: 12px;
+    line-height: 12px;
+    color: #999999;
+}
+.box{
+    width: auto;
+    height: auto;
+    margin: 0 0 0 3px;
+    padding: 4px 30px 4px 18px;
+    font-size: 12px;
+    line-height: 24px;
+    font-family: sans-serif;
+    color: #333333;
+    background-color: #ffffff;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    display: inline;
+    cursor: pointer;
+    background: 0% 0%;
+}
+.hire{
+    height: 34px;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    text-align: left;
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #EF524E;
+    height: 34px;
+    width: 90px;
+    padding: 8px 12px 8px 12px;
+    padding-left: 480px;
+    margin-left: 125px;
+}
+.black{
+    height: 34px;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    text-align: left;
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #333333;
+    height: 34px;
+    width: 90px;
+    padding: 8px 12px 8px 12px;
+}
+#parent{
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    background-color: #ffffff;
+    height: 37px;
+    width: 100%;
+    padding: 0 0px 0 0px;
+    position: relative;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    display: block;
+}
+#searchbar{
+    margin-top: 7.5px;
+    height: 15px;
+    margin-left: 35px;
+}
+#img {
+    margin: 1 em 0;
+}
+#img input{
+    background-color: transparent;
+    width: 40%;
+    border-bottom: 1 px solid gray;
+    padding: 1em 0.3em;
+    margin-left: 450px;
+    border-radius: 2px;
+}
+#img input:focus{
+    border-bottom-color: #d3d2dc;
+}
+#img button{
+    padding: 1em 2em;
+    background-color: #EF524E;
+    height: 45px;
+    margin-left: 5px;
+    border: none;
+    color: #ffffff;
+    border-radius: 2px;
+    margin-top: 7.5px;
+    cursor: pointer;
+}
+#img img {
+    width: 160px;
+    padding-left: 27px;
+    height: 70px;
+}
+
+
+
+
+
+
+
+#container {
+    display: flex;
+    width: 100%;
+    background-color: #e1e9ec;
+}
+#left {
+    width: 25%;
+    padding: 18px 18px 18px 18px;
+}
+#left > div {
+    background-color: #ffffff;
+    padding: 18px 18px 18px 18px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+#leftdown p {
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 18px;
+    text-decoration: none solid rgb(51, 51, 51);
+    word-spacing: 0px;
+    color: #333333;
+    height: 18px;
+    margin: 10px 0 18px 0;
+    display: block;
+}
+#leftdown span {
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    text-decoration: none solid rgb(239, 83, 78);
+    text-align: left;
+    word-spacing: 0px;
+    color: #333333;
+    height: 18px;
+}
+#right {
+    width: 70%;
+    padding: 18px 18px 18px 18px;
+}
+.headp{
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14px;
+    text-decoration: none solid rgb(51, 51, 51);
+    word-spacing: 0px;
+    color: #333333;
+    display: block;
+}
+#righthead {
+    display: flex;
+    justify-content: space-between;
+    line-height: 18px;
+}
+#datashowing {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.cardcontainer {
+    width: 90%;
+}
+.card:hover {
+    cursor: pointer;
+}
+.card {
+    width: 90%;
+    height: 300px;
+    background-color: #ffffff;
+    margin: auto;
+    padding: 18px 18px 18px 18px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.boughtdiv {
+    width: 90%;
+    background-color: #f6f6f6;
+    height: 30px;
+    margin: auto;
+    padding: 5px 18px 15px 18px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.image {
+    width: 100%;
+    height: 155px;
+    max-width: 100%;
+    max-height: 155px;
+}
+.name {
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    text-decoration: none solid rgb(102, 102, 102);
+    word-spacing: 0px;
+    color: #333333;
+}
+.address {
+    font-family: sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    text-decoration: none solid rgb(153, 153, 153);
+    word-spacing: 0px;
+    vertical-align: top;
+    background-color: #ffffff;
+    color: #999999;
+}
+.deal {
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 17px;
+    text-decoration: none solid rgb(51, 51, 51);
+    vertical-align: top;
+    word-spacing: 0px;
+    color: #333333;
+}
+.bought {
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    text-decoration: none solid rgb(102, 102, 102);
+    vertical-align: middle;
+    word-spacing: 0px;
+    color: #666666;
+}
+#bt1,#bt2,#bt3 {
+    font-family: sans-serif;
+    font-size: 11px;
+    text-decoration: none solid rgb(102, 102, 102);
+    text-align: center;
+    word-spacing: 0px;
+    background-color: #ffffff;
+    color: #666666;
+    height: 26px;
+    border: 1px solid #cccccc;
+    margin: 0 0 0 3px;
+    padding: 5px 5px 5px 5px;
+    display: inline-block;
+    cursor: pointer;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+#bt1:hover,#bt2:hover,#bt3:hover {
+    border: 1px dashed red;
+}
+.addressselect {
+    font-family: Arial;
+    font-size: 13.3333px;
+    text-decoration: none solid rgb(102, 102, 102);
+    color: #666666;
+    height: 18px;
+    margin: 10px 0px 0px -20px;
+}
+.addressselect:hover {
+    cursor: pointer;
+    color: #f47b58;
+}
+.deals {
+    font-family: sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 10px;
+    text-decoration: none solid rgb(255, 255, 255);
+    vertical-align: top;
+    white-space: nowrap;
+    word-spacing: 0;
+    padding: 3px 6px 3px 6px;
+    background-color: #f47b58;
+    color: #ffffff;
+    border-radius: 2px;
+}
+.deals2 {
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 17px;
+    text-decoration: none solid rgb(51, 51, 51);
+    vertical-align: top;
+    white-space: nowrap;
+    word-spacing: 0;
+    background-color: #ffffff;
+    color: #333333;
+}
+#winrs500 {
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    text-decoration: none solid rgb(51, 51, 51);
+    vertical-align: top;
+    word-spacing: 0;
+    background-color: #ffffff;
+    color: #333333;
+}
+#validon {
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    text-decoration: none solid rgb(102, 102, 102);
+    word-spacing: 0;
+    background-color: #ffffff;
+    color: #666666;
+}
+#nblucky {
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 13.5px;
+    text-decoration: none solid rgb(91, 164, 218);
+    white-space: nowrap;
+    word-spacing: 0;
+    background-color: #ffffff;
+    color: #5ba4da;
+    height: 30px;
+    width: 80px;
+    padding: 7px 12px 7px 12px;
+    border: 1px dashed #bdbdbd;
+    float: left;
+    display: block;
+    transform: none;
+    transition: all 0s ease 0s;
+    /* outline: rgb(255, 0, 0) dashed 0.8333px; */
+    box-sizing: border-box;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+#copybtn {
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 13px;
+    text-decoration: none solid rgb(102, 102, 102);
+    text-align: center;
+    white-space: nowrap;
+    word-spacing: 0;
+    background-color: #e1e9ec;
+    color: #666666;
+    height: 30px;
+    width: 56px;
+    padding: 7px 12px 7px 12px;
+    border-top: 1px solid #bdbdbd;
+    border-right: 1px dashed #bdbdbd;
+    border-bottom: 1px dashed #bdbdbd;
+    border-left: none;
+    display: inline-block;
+    cursor: pointer;
+    transform: none;
+    transition: all 0s ease 0s;
+    /* outline: rgb(255, 0, 0) dashed 0.8333px; */
+    box-sizing: border-box;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+#validtill {
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    text-decoration: none solid rgb(102, 102, 102);
+    text-align: left;
+    white-space: nowrap;
+    word-spacing: 0;
+    background-color: #ffffff;
+    color: #666666;
+    height: 18px;
+    width: 140px;
+    display: block;
+    box-sizing: border-box;
+}
+#knowbtn {
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    text-decoration: none solid rgb(239, 83, 78);
+    text-align: center;
+    white-space: nowrap;
+    word-spacing: 0;
+    background-color: #ffffff;
+    color: #ef534e;
+    height: 18px;
+    width: 66px;
+    display: inline-block;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-right: 0px;
+    margin-top: 10px;
+    margin-left: 50px;
+    border: none;
+}
+#leftupbottom {
+    display: flex;
+}  
+</style>
+    <div id="parent">
+        <div>
+            <i class="fa-solid fa-location-dot"></i>
+            <span class="location">Select Location</span>
+            <span class="box">New york</span>
+            <!-- <a href="#" class="hire">We're hiring</a>
+            <a href="#" class="black">How it Works</a>
+            <a href="#" class="black">List Your Business</a>
+            <a href="#" class="black">My Account</a> -->
+        </div>
+    </div>
+    <div id="img">
+        <div style="display: flex;">
+            <a href="/index.html"><img src="blob:https://web.whatsapp.com/5276a228-3620-4f27-868e-663895256586" alt=""></a>
+            <input type="text" id="searchbar" style="color: 1px solid gray;" placeholder="log in">
+            <button id="login">SignUp</button>
+        </div>
+    </div>
+
+    <!-- <div id="container">
+        <div id="left">
+            <p class="headp">Promos & Filters</p>
+            <div id="leftup">
+                <div>
+                    <p id="winrs500">Win Rs 500 instant off code</p>
+                    <p id="validon">Valid on all prepaid deals | No minimum purchase</p>
+                    <div>
+                        <div id="nblucky">NBLUCKY</div>
+                        <button id="copybtn">Copy</button>
+                    </div>
+                </div>
+                <hr>
+                <div id="leftupbottom">
+                    <div>
+                        <p id="validtill">Valid till 02 Feb 2023</p>
+                    </div>
+                    <div>
+                        <button id="knowbtn">Know more</button>
+                    </div>
+                </div>
+            </div>
+            <div id="leftdown">
+                <div> -->
+                    <!-- <div>
+                        <p>Categories</p>
+                        <span>Restaurants (30)</span>
+                    </div>
+                    <hr>
+                    <p>Location</p>
+                    <span>New Delhi</span>
+                    <ul id="aerocity" class="addressselect">
+                        AeroCity (7)
+                    </ul>
+                    <ul id="connaughtplace" class="addressselect">
+                        Connaught Place (5)
+                    </ul>
+                    <ul id="surajmalvihar" class="addressselect">
+                        Surajmal Vihar (6)
+                    </ul>
+                    <ul id="saket" class="addressselect">
+                        Saket (4)
+                    </ul>
+                    <ul id="mahipalpur" class="addressselect">
+                        Mahipalpur (3)
+                    </ul>
+                    <ul id="dwarka" class="addressselect">
+                        Dwarka (2)
+                    </ul>
+                </div> -->
+            </div>
+        </div>
+        <div id="right">
+            <div id="righthead">
+                <div>
+                    <p class="headp">Premium Merchants - FNB in New Delhi</p>
+                </div>
+                <div>
+                    <button id="bt1">Popular</button>
+                    <button id="bt2">Price (High to Low)</button>
+                    <button id="bt3">Price (Low to High)</button>
+                </div>
+            </div>
+            <div id="datashowing">
+                <!-- append data -->
+            </div>
+        </div>
+    </div>
+    <!--------------------- Footer ---------------------->
+    <!-- <div id="footer" style= "width: 100%; color: #ffffff;margin-top: 50px;font-family: sans-serif;">
+        <div style="background-color: #333;">
+            <div id="f1" style= "display: flex;padding-left: 10px;padding-top: 35px;">
+                <div id="f2" >
+                    <p style="font-size: 15px; font-weight: 600;">Amazing offers available on nearbuy</p>
+                    <p style="padding-top: 10px;font-size: 12px;">
+                        nearbuy helps you discover the best things to do, eat and buy – wherever you are! Make every day awesome with nearbuy. Dine at the finest restaurants, relax at the best spas, pamper yourself <br>
+                        with exciting wellness and shopping offers or just explore your city intimately… you will always find a lot more to do with nearbuy. From tattoo parlors to music concerts, movie tickets to theme <br>
+                        parks, everything you want is now within reach. Don't stop yet! Take it wherever you go with the nearbuy mobile app. Based on your location and preference, our smart search engine will suggest <br> 
+                        new things to explore every time you open the app. What's more, with offers on everything around you... you are sure to try something new every time.</p>
+                </div>
+                <div>
+                    <h3 style="padding-left: 50px;">Follow Us</h3>
+                    <div id="connect" style="padding-top: 10px; display: flex;padding-left: 50px;justify-content: space-between;">
+                        <div>
+                            <i class="fa-brands fa-facebook"></i>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="c7" style="padding-left: 10px;padding-top: 40px; display: flex;margin-top: 30px; font-family: sans-serif;color: #fff;background-color: #000000;">
+                <div >
+                    <h3>Company</h3>
+                    <p style="padding-top: 15px;">About Us</p>
+                    <p style="padding-top: 15px;">Blog</p>
+                    <p style="padding-top: 15px;">Policy</p>
+                </div>
+                <div id="m10" style="padding-left: 280px;">
+                    <H3>Help</H3>
+                    <p style="padding-top: 15px;">Contact Us</p>
+                    <p style="padding-top: 15px;">Sitemap</p>
+                </div>
+                <div id="n10" style="padding-left: 350px;">
+                    <h3>Download app</h3>
+                    <img id="img" style="width: 150px;padding-top: 0px;" src="https://res4.nbstatic.in/static/images/google-play-badges.svg" alt="">
+                    <p id="ho-ho" style="font-family: sans-serif;padding-left: 37px;padding-top: 5px;">Google Play</p>
+                </div>
+                <div id="p10" style="padding-left: 55px;">
+                    <img id="img" style="width: 150px;padding-top: 58px;" src="https://res4.nbstatic.in/static/images/app-store.svg" alt="">
+                    <p id="ho-ho" style=" font-family: sans-serif;padding-top: 5px;padding-left: 37px;">App Store</p>
+                </div>
+            </div>
+            <div style="background-color: #000000; display: flex;padding-left: 7px;padding-top: 15px;font-family: sans-serif;gap: 630px;font-weight: 500;">
+                <p class="vini">Universal Fine Print</p>
+                <p class="vini">Customer Care: +91-7303390416 - 11 AM to 8 PM (MON - SUN)</p>
+            </div>
+            <div style="background-color: #000000;padding-top: 13px;padding-left: 5px;">
+                <p>Copyright ©️ nearbuy.com India Private Limited. All rights reserved.</p>
+            </div>
+            <div style="background-color: #000000;padding-top: 5px;padding-left: 5px;padding-bottom: 30px;">
+                <p>v 3.0.0</p>
+            </div>
+        </div>
+    </div> -->
+</body>
+  <script>
+    var data = [
+    {
+        id : 1,
+        image : "https://media.blueapron.com/recipes/35783/square_newsletter_images/1674588420-50-0027-5442/0227_2P11_Baked-Chicken-Thighs9154_SQ_Web.jpg?quality=80&width=850&format=pjpg",
+        name : "",
+        address : "Connaught Place",
+        deal : "Beer & Drinks with Starters from ₹1899",
+        price : 1899,
+        bought : "674"
+    },
+    {
+        id : 2,
+        image : "https://img4.nbstatic.in/tr:w-350/6114a79a1e2731000b7036ee.jpg",
+        name : "Open House Cafe",
+        address : "Connaught Place",
+        deal : "Drinks with Starters from ₹1299",
+        price : 1299,
+        bought : "3,796"
+    },
+    {
+        id : 3,
+        image : "https://img4.nbstatic.in/tr:w-350/620225d73b031b000b53e5fe.jpg",
+        name : "Savannah Bar - The Radisson Blu Plaza",
+        address : "Mahipalpur",
+        deal : "Drinks with Starters from ₹1895",
+        price : 1895,
+        bought : "591"
+    },
+    {
+        id : 4,
+        image : "https://img4.nbstatic.in/tr:w-350/61e517ca1e2731000bdc4ee5.jpg",
+        name : "Cafe Pride - Pride Plaza Hotel",
+        address : "Aerocity",
+        deal : "Buffet Offers from ₹638",
+        price : 638,
+        bought : "1,778"
+    },
+    {
+        id : 5,
+        image : "https://img4.nbstatic.in/tr:w-350/5c514eeecff47e000de10c84.jpg",
+        name : "Level 2 - Radisson Blu",
+        address : "Outer Ring Road, Paschim Vihar",
+        deal : "Buffet Offers from ₹849",
+        price : 849,
+        bought : "1,415"
+    },
+    {
+        id : 6,
+        image : "https://img4.nbstatic.in/tr:w-350/5f588bdcb7b01c000b3d91a7.jpg",
+        name : "Lord of the Drinks",
+        address : "Connaught Place",
+        deal : "Drinks with Starters from ₹1429",
+        price : 1429,
+        bought : "1,204"
+    },
+    {
+        id : 7,
+        image : "https://img4.nbstatic.in/tr:w-350/5e284308d60180000dbbd915.jpg",
+        name : "Fifty9 - Radisson Blu Marina Hotel",
+        address : "Connaught Place",
+        deal : "Buffet Offers from ₹1500",
+        price : 1500,
+        bought : "1,410"
+    },
+    {
+        id : 8,
+        image : "https://img4.nbstatic.in/tr:w-350/60e4423640e9df000b9f2a24.jpg",
+        name : "Cafe on 3 - Holiday Inn",
+        address : "Mayur Vihar Phase 1, Surajmal Vihar",
+        deal : "Buffet Offer & Drinks with Starters from ₹799",
+        price : 799,
+        bought : "1,106"
+    },
+    {
+        id : 9,
+        image : "https://img4.nbstatic.in/tr:w-350/5fe19ad9c4d55d000b8a2186.jpg",
+        name : "Viva - All Day Dining - Holiday Inn",
+        address : "Aerocity",
+        deal : "Buffet, Set Menu Meals from ₹3199",
+        price : 3199,
+        bought : "990"
+    },
+    {
+        id : 10,
+        image : "https://img4.nbstatic.in/tr:w-350/5f5782eab7b01c000b3d8fdf.jpg",
+        name : "Warehouse Cafe",
+        address : "Connaught Place",
+        deal : "Drinks with Starters from ₹2399",
+        price : 2399,
+        bought : "4,695"
+    },
+    {
+        id : 11,
+        image : "https://img4.nbstatic.in/tr:w-350/62dfd5c5b3c621000b6fbc09.jpg",
+        name : "Infinity - Crowne Plaza",
+        address : "Mayur Vihar Phase 1, Surajmal Vihar",
+        deal : "Buffet Offers from ₹2299",
+        price : 2299,
+        bought : "818"
+    },
+    {
+        id : 12,
+        image : "https://img4.nbstatic.in/tr:w-350/5fb27d88c4d55d000bf92209.jpg",
+        name : "Food Exchange - Hotel Novotel",
+        address : "Aerocity",
+        deal : "Buffets, Set Menu Meals from ₹4584",
+        price : 4584,
+        bought : "763"
+    },
+    {
+        id : 13,
+        image : "https://img4.nbstatic.in/tr:w-350/61c44e7f1e2731000ba42909.jpg",
+        name : "NYC - Radisson Blu Plaza Delhi Airport",
+        address : "IGI T3 Road, Mahipalpur",
+        deal : "Buffet Offers from ₹3999",
+        price : 3999,
+        bought : "720"
+    },
+    {
+        id : 14,
+        image : "https://img4.nbstatic.in/tr:w-350/6120ad6140e9df000b810d18.jpg",
+        name : "Farmer's Basket At Pluck - Hotel Pullman",
+        address : "Aerocity",
+        deal : "Buffet Offers from ₹4833",
+        price : 4833,
+        bought : "1,886"
+    },
+    {
+        id : 15,
+        image : "https://img4.nbstatic.in/tr:w-350/62d067bdedffcc000b0607da.jpg",
+        name : "The Great Kabab Factory - Radisson Blu Plaza Delhi Airport",
+        address : "IGI T3 Road, Mahipalpur",
+        deal : "Buffet Offers from ₹2095",
+        price : 2095,
+        bought : "644"
+    },
+    {
+        id : 16,
+        image : "https://img4.nbstatic.in/tr:w-350/60002b4ae1ecca000b032e32.jpg",
+        name : "Dilli Kanteen Kitchen - The Grand",
+        address : "Nelson Mandela Road, Vasant Kunj Sector C, Saket",
+        deal : "Buffet Offers from ₹1770",
+        price : 1770,
+        bought : "675"
+    },
+    {
+        id : 17,
+        image : "https://img4.nbstatic.in/tr:w-350/5cde50f8d60180000dadaaae.jpg",
+        name : "Spring - Radisson Blu",
+        address : "Soul City Mall, Sector 13 Dwarka",
+        deal : "Buffet Offer from ₹2477",
+        price : 2477,
+        bought : "694"
+    },
+    {
+        id : 18,
+        image : "https://img4.nbstatic.in/tr:w-350/611a21d840e9df000b81087c.jpg",
+        name : "The Hangar - Bar & Lounge - Holiday Inn",
+        address : "Aerocity",
+        deal : "Drinks with Starters from ₹1899",
+        price : 1899,
+        bought : "435"
+    },
+    {
+        id : 19,
+        image : "https://img4.nbstatic.in/tr:w-350/5f5783ba3ea567000b0ac406.jpg",
+        name : "Thyme - The Umrao",
+        address : "Surajmal Vihar",
+        deal : "Buffet Offers, Set Menu Meals, Beer & Drink with Starters from ₹1499",
+        price : 1499,
+        bought : "424"
+    },
+    {
+        id : 20,
+        image : "https://img4.nbstatic.in/tr:w-350/5cb82ca8d60180000d7acbbd.jpg",
+        name : "Pavilion 75 - WelcomHotel Dwarka",
+        address : "Sector 10 Dwarka",
+        deal : "Buffet Offers and Set Menu Meals from ₹1799",
+        price : 1799,
+        bought : "461"
+    },
+    {
+        id : 21,
+        image : "https://img4.nbstatic.in/tr:w-350/6114a7ec40e9df000b66f6eb.jpg",
+        name : "Patio - The Muse Sarovar Portico",
+        address : "Bijwasan Road, Saket",
+        deal : "Buffet Offers from ₹649",
+        price : 649,
+        bought : "285"
+    },
+    {
+        id : 22,
+        image : "https://img4.nbstatic.in/tr:w-350/5fb37df45cc6f2000bbb48e2.jpg",
+        name : "Stallion - Hotel Pride Plaza",
+        address : "Aerocity",
+        deal : "Drinks with Starters from ₹999",
+        price : 999,
+        bought : "224"
+    },
+    {
+        id : 23,
+        image : "https://img4.nbstatic.in/tr:w-350/60631ce19b6019000bcf4b8a.jpg",
+        name : "Cafe Knosh - The Leela Ambience Convention Hotel",
+        address : "Maharaja Surajmal Road, Surajmal Vihar",
+        deal : "Buffet Offers from ₹750",
+        price : 750,
+        bought : "1,486"
+    },
+    {
+        id : 24,
+        image : "https://img4.nbstatic.in/tr:w-350/61e5504a278a39000bf7de0a.jpg",
+        name : "India Grill - Hilton Garden Inn",
+        address : "Saket",
+        deal : "Buffet Offers from ₹2800",
+        price : 2800,
+        bought : "126"
+    },
+    {
+        id : 25,
+        image : "https://img4.nbstatic.in/tr:w-350/62e24adcb3c621000b6af62d.jpg",
+        name : "Cherry Bar - The Leela Ambience Convention Hotel",
+        address : "Maharaja Surajmal Road, Surajmal Vihar",
+        deal : "Drinks with Starters from ₹799",
+        price : 799,
+        bought : "76"
+    },
+    {
+        id : 26,
+        image : "https://img4.nbstatic.in/tr:w-350/62bef269b3c621000b267da6.jpg",
+        name : "Nook - Hotel Aloft",
+        address : "AeroCity",
+        deal : "Buffet Offers from ₹2360",
+        price : 2360,
+        bought : "746"
+    },
+    {
+        id : 27,
+        image : "https://img4.nbstatic.in/tr:w-350/62bee7863b031b000b9d659c.jpg",
+        name : "Butterroom",
+        address : "Epicuria, Nehru Place",
+        deal : "Drinks with Starters from ₹2529",
+        price : 2529,
+        bought : "429"
+    },
+    {
+        id : 28,
+        image : "https://img4.nbstatic.in/tr:w-350/62b551b4b3c621000b267571.jpg",
+        name : "The Flying Saucer Cafe",
+        address : "Epicuria, Nehru Place",
+        deal : "Drinks with Starters from ₹1429",
+        price : 1429,
+        bought : "338"
+    },
+    {
+        id : 29,
+        image : "https://img4.nbstatic.in/tr:w-350/60631c4eed895d000bdfc9c1.jpg",
+        name : "Club Cuba - The Leela Ambience Convention Hotel",
+        address : "Maharaja Surajmal Road, Surajmal Vihar",
+        deal : "Beer & Drinks with Starters from ₹799",
+        price : 799,
+        bought : "298"
+    },
+    {
+        id : 30,
+        image : "https://img4.nbstatic.in/tr:w-350/62430f9d3b031b000b701986.jpeg",
+        name : "The Illusion Lounge & Bar",
+        address : "MGF Metropolitan Mall, Saket",
+        deal : "Drinks with Starters from ₹2299",
+        price : 2299,
+        bought : "99"
+    }
+    
+];
+
+let bt1 = document.getElementById("bt1");
+let bt2 = document.getElementById("bt2");
+let bt3 = document.getElementById("bt3");
+let aerocity = document.getElementById("aerocity");
+let connaughtplace = document.getElementById("connaughtplace");
+let surajmalvihar = document.getElementById("surajmalvihar");
+let saket = document.getElementById("saket");
+let mahipalpur = document.getElementById("mahipalpur");
+let dwarka = document.getElementById("dwarka");
+
+localStorage.setItem("data", JSON.stringify(data));
+
+let datashowing = document.getElementById("datashowing");
+
+displaydata(data);
+
+bt1.addEventListener("click",()=>{
+    data.sort((a,b)=>([+b["bought"].replace(",", "")]-[+a["bought"].replace(",", "")]));
+    displaydata(data);
+    forbtn ();
+    bt1.style.backgroundColor = "#ef534e";
+    bt1.style.color = "#ffffff";
+});
+bt2.addEventListener("click",()=>{
+    data.sort((a,b)=>(b.price-a.price));
+    displaydata(data);
+    forbtn ();
+    bt2.style.backgroundColor = "#ef534e";
+    bt2.style.color = "#ffffff";
+});
+bt3.addEventListener("click",()=>{
+    data.sort((a,b)=>(a.price-b.price));
+    displaydata(data);
+    forbtn ();
+    bt3.style.backgroundColor = "#ef534e";
+    bt3.style.color = "#ffffff";
+});
+aerocity.addEventListener("click", ()=>{
+    let filtereddata = data.filter((element)=>{
+        if(element.address.toLowerCase().includes("aerocity")) {
+            return element;
+        }
+    });
+    forbtn ();
+    displaydata (filtereddata);
+});
+connaughtplace.addEventListener("click", ()=>{
+    let filtereddata = data.filter((element)=>{
+        if(element.address.toLowerCase().includes("connaught place")) {
+            return element;
+        }
+    })
+    forbtn ();
+    displaydata (filtereddata);
+});
+surajmalvihar.addEventListener("click", ()=>{
+    let filtereddata = data.filter((element)=>{
+        if(element.address.toLowerCase().includes("surajmal vihar")) {
+            return element;
+        }
+    })
+    forbtn ();
+    displaydata (filtereddata);
+});
+saket.addEventListener("click", ()=>{
+    let filtereddata = data.filter((element)=>{
+        if(element.address.toLowerCase().includes("saket")) {
+            return element;
+        }
+    })
+    forbtn ();
+    displaydata (filtereddata);
+});
+mahipalpur.addEventListener("click", ()=>{
+    let filtereddata = data.filter((element)=>{
+        if(element.address.toLowerCase().includes("mahipalpur")) {
+            return element;
+        }
+    })
+    forbtn ();
+    displaydata (filtereddata);
+});
+dwarka.addEventListener("click", ()=>{
+    let filtereddata = data.filter((element)=>{
+        if(element.address.toLowerCase().includes("dwarka")) {
+            return element;
+        }
+    })
+    forbtn ();
+    displaydata (filtereddata);
+});
+
+function forbtn () {
+    bt1.style.backgroundColor = "#ffffff";
+    bt1.style.color = "#666666";
+    bt2.style.backgroundColor = "#ffffff";
+    bt2.style.color = "#666666";
+    bt3.style.backgroundColor = "#ffffff";
+    bt3.style.color = "#666666";
+}
+
+function displaydata (data) {
+    datashowing.innerHTML = null;
+    data.forEach((element,index) => {
+        let cardcontainer = document.createElement("div");
+        let card = document.createElement("div");
+        card.setAttribute("class", "card");
+        let image = document.createElement("img");
+        image.setAttribute("class", "image");
+        image.setAttribute("src", element.image);
+        let name = document.createElement("h2");
+        name.setAttribute("class", "name");
+        name.innerText = element.name;
+        let address = document.createElement("span");
+        address.setAttribute("class", "address");
+        address.innerText = element.address;
+        let deal = document.createElement("p");
+        deal.setAttribute("class", "deal");
+        let deals = document.createElement("span");
+        deals.innerText = "DEALS";
+        deals.setAttribute("class", "deals");
+        let deals2 = document.createElement("span");
+        deals2.innerText = " "+element.deal;
+        let boughtdiv = document.createElement("div");
+        boughtdiv.setAttribute("class", "boughtdiv");
+        let bought = document.createElement("p");
+        bought.setAttribute("class", "bought");
+        bought.innerText = element.bought + " Bought";
+
+        deal.append(deals,deals2);
+        card.append(image, name, address, deal);
+        boughtdiv.append(bought);
+        cardcontainer.append(card,boughtdiv);
+        cardcontainer.addEventListener("click", ()=>{
+            window.location.href = "deals.html";
+        })
+        datashowing.append(cardcontainer);
+    });
+}
+  </script> 
+</html> 
