@@ -2,7 +2,7 @@ let deals = [
     {
         id : 1,
         bought : 66,
-        name : "2 Lunch Buffets (Veg/Non-Veg)",
+        name : "2 oven-baked cheesed (Veg/Non-Veg)",
         mrp : "7,930",
         price : "3,965",
         off : 50,
@@ -11,7 +11,7 @@ let deals = [
     {
         id : 2,
         bought : 12,
-        name : "2 Saturday Lunch Buffets (Veg/Non-Veg)",
+        name : "2 oven-baked cheesed-creamy trufle (Veg/Non-Veg)",
         mrp : "9,665",
         price : "4,833",
         off : 50,
@@ -20,7 +20,7 @@ let deals = [
     {
         id : 3,
         bought : 15,
-        name : "Lunch Buffet (Veg/Non-Veg)",
+        name : "pastao whole grain (Veg/Non-Veg)",
         mrp : "3,965",
         price : "2,082",
         off : 47,
