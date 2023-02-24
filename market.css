@@ -1,0 +1,41 @@
+.top-container{
+    display: flex;
+    margin: auto;
+}
+
+.container{
+    width: 400px;
+    justify-content: space-between;
+}
+
+.top-banner{
+    display: flex;
+    margin: auto;
+}
+.featured{
+    display: flex;
+    margin: auto;
+}
+
+.ShopByCategory{
+    display: flex;
+    margin: auto; 
+}
+
+.Social-Handles{
+    display: flex;
+    
+}
+
+.from-Blog{
+    display: flex;
+}
+.products{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.linkedPages{
+    padding-left: 10px;
+    padding-right: 10px;
+}
