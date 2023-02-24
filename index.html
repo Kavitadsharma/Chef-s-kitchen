@@ -155,43 +155,176 @@ h4{
 /* part2  css  completes here  */
 /*  */
 /*  */
+.part3{
+    width: 95%;
+    height: 700px;
+    /* border: 2px solid red; */
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 10px;
+
+}
+.p3crd{
+    width: 270px;
+    height: 340px;
+    /* border: 2px solid blue; */
+    margin: auto;
+}
+.p3crd img{
+    width: 270px;
+    height: 250px;
+    cursor: pointer;
+}
+h5{
+    text-align: center;
+}
+.p3p{
+    font-size: medium;
+}
 
 /* part3 css completes here  */
 /*  */
 /*  */
+
+.part4{
+    width: 100%;
+    height: 600px;
+    /* border: 5px solid red; */
+}
+.part4 img{
+    width: 100%;
+    height: 600px;
+}
+.centered{
+    width: 500px;
+    height: 350px;
+    /* border: 5px solid black; */
+    margin-top: 65px;
+}
+.centered {
+    
+    position: absolute;
+    top: 380%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    
+}
+.centered img{
+    width: 500px;
+    height: 20px;
+}
+.centered1{
+    margin-top: 70px;
+    position: absolute;
+    top: 380%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    color: rgb(12, 124, 209);
+}
+.pt4{
+    color: navy;
+   
+
+}
+
+/* part4 css completes here  */
+/*  */
+/*  */
+.part5{
+    width: 850px;
+    height: 350px;
+    border: 5px solid black;
+    margin: auto;
+}
+.part5 img{
+    width: 850px;
+    height: 350px;
+}
+.center{
+    /* background-color: red; */
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 3130px;
+    left: 750px;
+}
+.center img{
+    width: 120px;
+    height: 60px;
+}
+.center1{
+   position: absolute;
+    transform: translate(-50%,-50%);
+    top: 3180px;
+    left: 750px;
+}
+.pt5txt{
+    color: white;
+    font-size:35px;
+}
+.center2{
+   position: absolute;
+    transform: translate(-50%,-50%);
+    top: 3250px;
+    left: 750px;
+}
+.pt5txt1{
+    color: rgb(11, 11, 179);
+    font-size:35px;
+}
+.center3{
+   position: absolute;
+    transform: translate(-50%,-50%);
+    top: 3350px;
+    left: 750px;
+}
+.center3 button{
+      padding: 10px 15px 10px 15px;
+      
+}
 </style>
 </head>
 <body>
     <div class="nav">
         <div class="logo">
             <div class="logoimg">
-                <img src="./chefs-kitchen-logo.png" alt="">
+               <a href="./index.html"><img src="./chefs-kitchen-logo.png" alt=""></a> <img src="./chefs-kitchen-logo.png" alt="">
              </div>
         </div>
         <div class="navele">
             <div>
-                <h5>ON THE MENU</h5> 
+                <h5 class=""><a href="./onthemenu.html"> ON THE MENU</a></h5> 
             </div>
             <div>
-                 <h5>PRICING</h5>
+                 <h5 class=""><a href="./pricing.html">PRICING</a> </h5>
             </div>
             <div>
-                <h5>WINE</h5>
+                <h5 class=""><a href="./wine.html">WINE</a></h5>
             </div>
             <div>
-                <h5>GIFTS</h5>
+                <h5 class=""> <a href="./gifts.html">GIFTS</a> </h5>
             </div>
             <div>
-                <h5>MARKET</h5>
+                <h5 class=""><a href="./market.html">MARKET</a> </h5>
             </div>
         </div>
         <div class="bar">
-            <button>LOG IN </button>
-           <button>SIGN UP</button>
+            <div>
+                <button><a href="./login.html"> LOG IN </a> </button>
+
+            </div>
+            <div>
+                <button><a href="./signup.html"> SIGN UP</a> </button>
+
+            </div>
 
         </div>
     </div>
     <!-- nav bar completes here. -->
+    <!--  -->
+    <!--  -->
     <div class="part1">
         <div>
             <img src="https://media.blueapron.com/assets/registration/homepage/desktop-splash-v2.webp?height=800&quality=90&format=pjpg" alt="">
@@ -202,7 +335,7 @@ h4{
     <h1>465+ million meals shipped</h1>
     <p>See why home cooks stick with the <br> original American meal kit.</p>
 
-    <!-- part1 completed -->
+    <!-- part1 completes here -->
     <!--  -->
     <!--  -->
 
@@ -233,16 +366,99 @@ h4{
    <br>
    <h1>CHOOSE FROM</h1>
    <h1 class="blue">70+ weekly options</h1>
-    <!-- part2 completed -->
+    <!-- part2 completes here -->
     <!--  -->
     <!--  -->
+    <div class="part3">
+        <div class="p3crd">
+            <img src="https://media.blueapron.com/assets/registration/homepage/craft.webp?width=300&amp;height=300&amp;quality=90" alt="">
+            <h5>CRAFT</h5><p class="p3p">Cheese Crisp Burgers</p>
+        </div>
+        <div class="p3crd">
+            <img src="https://media.blueapron.com/assets/registration/homepage/wellness.webp?width=300&amp;height=300&amp;quality=90" alt="">
+            <h5>WELLNESS</h5>
+            <p class="p3p">Turkey & Mushroom Lettuce Cups</p>
+        </div>
+        <div class="p3crd">
+            <img src="https://media.blueapron.com/assets/registration/homepage/family-friendly.webp?width=300&amp;height=300&amp;quality=90" alt="">
+            <h5>FAMILY FRIENDLY</h5>
+            <p class="p3p">Mafalda Pasta</p>
+        </div>
+        <div class="p3crd">
+            <img src="https://media.blueapron.com/assets/registration/homepage/fast-and-easy.webp?width=300&amp;height=300&amp;quality=90" alt="">
+            <h5>FAST & EASY</h5>
+            <p class="p3p">Sheet Pan Cheesy Jalapeño Chicken</p>
+        </div>
+        <div class="p3crd">
+            <img src="https://media.blueapron.com/assets/registration/homepage/vegetarian.webp?width=300&amp;height=300&amp;quality=90" alt="">
+            <h5>VEGETARIAN</h5>
+            <p class="p3p">Quinoa & Vegetable “Fried Rice”s</p>
+        </div>
+        <div class="p3crd">
+            <img src="https://media.blueapron.com/assets/registration/homepage/premium-steak.webp?width=300&amp;height=300&amp;quality=90" alt="">
+            <h5>PREMIUM</h5>
+            <p class="p3p">NY Strip Steaks & Herb-Mushroom Pan Sauce</p>
+        </div>
+        <div class="p3crd">
+            <img src="https://media.blueapron.com/assets/registration/homepage/ready-to-cook.webp?width=300&amp;height=300&amp;quality=90" alt="">
+            <h5>READY TO COOK</h5>
+            <p class="p3p">Pesto Chicken and Orzo</p>
+        </div>
+        <div class="p3crd">
+            <img src="https://media.blueapron.com/assets/registration/homepage/heat-and-eat.webp?width=300&amp;height=300&amp;quality=90" alt="">
+            <h5>HEAT & EAT</h5>
+            <p class="p3p">Cheesy Truffle Cavatappi</p>
+        </div>
+        <div class="p3crd">
+            <img src="https://media.blueapron.com/assets/registration/homepage/breakfast.webp?width=300&amp;height=300&amp;quality=90" alt="">
+            <h5>BREAKFAST</h5>
+            <p class="p3p">Fried Egg & Prosciutto Sandwiches</p>
+        </div>
+        <div class="p3crd">
+            <img src="https://media.blueapron.com/assets/registration/homepage/desserts.webp?width=300&amp;height=300&amp;quality=90" alt="">
+            <h5>DESSERTS</h5>
+            <p class="p3p">Flourless Chocolate Cake</p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <button class="p2btn">BROWSE OUR MENU'S</button>
+    <br>
+    <br>
+    <br>
+   <!-- part3 completes here -->
+    <!--  -->
+    <!--  -->
+    <div class="part4">
+        <div>
+            <img src="https://media.blueapron.com/assets/registration/homepage/cooking-pot.webp?height=600&quality=90" alt="">
+            <div class="centered"><img src="https://media.blueapron.com/assets/registration/homepage/texture-pattern.webp?height=20&quality=90" alt=""></div>
+            <div class="centered1"><p><b>Celebrating 10 years of happy customers </p> 
+                <p class="pt4"> We love chef's kitchen! It eliminates a ton of food   <br>waste while 
+               allowing us to try new things<br> and have tasty meals. Really great quality food,<br> awesome flavors, and things we wouldn't<br>
+                otherwise have any idea how to create.<br><br>
+                
+                — CHRISTY</b></p></div>
+        </div>
+            
 
-   
-    <!-- part3 completes here -->
+    </div>
+    <br>
+    <br>
+    <br>
+    <!-- part 4 completes here -->
     <!--  -->
     <!--  -->
+    <div class="part5">
+        <div>
+            <img src="https://media.blueapron.com/assets/registration/homepage/green-field.png?height=400&quality=90" alt="">
+            <div class="center"><img src="https://media.blueapron.com/assets/registration/homepage/hand-icon.svg" alt=""></div>
+            <div class="center1"><h2 class="pt5txt">We’re proud to be a</h2></div>
+            <div class="center2"><h2 class="pt5txt1">CARBON NEUTRAL COMPANY</h2></div>
+            <div class="center3"><button> LEARN MORE</button></div>
+        </div>
 
-
+    </div>
        
 
     
