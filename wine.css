@@ -1,0 +1,228 @@
+
+
+
+.nav{
+    width: 100%;
+    height: 90px;
+    /* border: 3px solid black; */
+    display: flex;
+}
+.logo{
+  width: 10%;
+  height: 90px;
+  /* border: 2px solid black; */
+  margin-left: 150px;
+  cursor: pointer;
+}
+.logo >.logoimg img{
+    width: 95%;
+    height: 90px;
+}
+.navele{
+    margin: auto;
+    width: 30%;
+    height: 90px;
+    /* border: 2px solid red; */
+    /* background-color: whitesmoke; */
+     margin-left:80px;
+    align-items: center;
+    display:flex;
+    justify-content: space-between;
+    cursor: pointer;
+
+}
+.bar{
+    width: 200px;
+    height: 60px;
+    /* border: 2px solid blue; */
+    margin-right: 185px;
+    align-items: center;
+    margin-top: 15px;
+    display: inline-flex;
+    border-style: solid;
+   
+    justify-content: space-between;
+
+}
+.bar :nth-child(1){
+    height:60px;
+    width:90px;
+    background-color: whitesmoke;
+
+    align-items: center;
+   color: black;
+    padding: 15px 15px 15px 15px;
+    cursor: pointer;
+  
+
+}
+.bar :nth-child(2){
+    height:60px;
+    width:90px;
+    cursor: pointer;
+    color: black;
+     background-color:whitesmoke;
+    align-items: center;
+    
+padding: 15px 15px 15px 15px;
+  
+
+}
+  
+    #container {
+position: relative;
+width: 100%;
+height:400px;
+margin:  auto;
+}
+
+#container #img {
+width:100%;
+height:400px
+}
+
+#container #content {
+position:absolute;
+bottom: 0;
+background: transparent; /* Fallback color */
+background: transparent; /* Black background with 0.5 opacity */
+color:white;
+width: 100%;
+padding-bottom: 70px;
+padding-left: 850px;
+font-size: x-large;
+}
+#button{
+background-color: #05055b;
+color: antiquewhite;
+
+}
+#button:hover{
+    cursor: pointer;
+    background-color: red;
+}
+#next{
+
+justify-content: space-between;
+width:100%;
+height:300px;
+margin-left: 100px;
+margin-top: 50px;
+}
+
+
+#next div{
+width:32%;
+height:300px;
+display:inline-flex;
+
+
+  
+}
+#next img{
+width:80%;
+height:auto;
+
+}
+
+#first{
+margin-left: 700px;
+height: fit-content;
+margin-top: 50px;
+font-size:x-large;
+width:100%;
+
+}
+#food {
+position: relative;
+width: 100%;
+height:auto;
+
+padding-top: 50px;
+}
+#food img{
+width:100%;
+height:auto;
+}
+
+
+
+
+#wine{
+width:100%;
+margin-top: 50px;
+
+}
+#wine img{
+width:100%;
+
+}
+#last{
+width:100%;
+margin-top: 50px;
+
+}
+#last img{
+width:100%;
+}
+#exp{
+width:100%;
+margin-top: 50px;
+
+}
+#exp img{
+width:100%;
+}
+#gre{
+width:100%;
+margin-top: 50px;
+
+}
+#gre img{
+width:100%;
+
+}
+#som{
+width:100%;
+margin-top: 50px;
+
+}
+#som img{
+width:100%;
+
+}
+#logo img{
+width: 50px;
+}
+#insta{
+justify-content: space-evenly;
+background-color: blueviolet;
+display:inline-flex;
+width:100%;
+height:10%
+}
+#insta div{
+display: block;
+
+
+}
+#blog{
+display:flex;
+background-color: aquamarine;
+width:30%;
+height: 10%;
+}
+#logo{
+display: flex;
+background-color: blue;
+height:auto;
+width:30%;
+height: 10%;
+}
+#email{
+width:30%;
+background-color: brown;
+height: auto;
+display: block;
+height: 10%;
+}

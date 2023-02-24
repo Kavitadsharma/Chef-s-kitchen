@@ -1,0 +1,32 @@
+#wine{
+    width:80%;
+    height:auto;
+    background-color: rgb(177, 241, 241);
+    justify-content: space-evenly;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(6,550px);
+    gap: 20px;
+    align-items: center;
+    margin: auto;
+    padding-top: 50px;
+
+}
+#wine div{
+    width:90%;
+    height:auto;
+    background-color: rgb(244, 236, 236);
+    margin: auto;
+    padding-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+#wine img{
+    width:100%;
+    height:auto;
+}
+#intro{
+    text-align: center;
+    margin: auto;
+}
