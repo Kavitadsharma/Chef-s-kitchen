@@ -1,0 +1,41 @@
+form {
+    width: 400px;
+    height: 530px;
+    margin: auto;
+    padding-top: 20px;
+    margin-top: 30px;
+    background-color: #58b1b1;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#submit {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 83.5%;
+}
+
+h4{
+    text-align: center;
+}
+
+p {
+    display: block;
+    margin: auto;
+    width: 80%;
+    height: 20px;
+}
+
+#submit:hover {
+    cursor: pointer;
+    background-color: red;
+}
+input {
+    display: block;
+    margin: auto;
+    width: 80%;
+    height: 35px;
+    margin-bottom: 30px;
+    border: 1px solid grey;
+}
+.C {
+    padding-left: 10px;
+}

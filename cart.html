@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shopping Cart</title>
+	<style>
+		table {
+			border-collapse: collapse;
+			width: 100%;
+		}
+		th, td {
+			text-align: left;
+			padding: 8px;
+			border-bottom: 1px solid #ddd;
+		}
+		th {
+			background-color: #f2f2f2;
+		}
+		.button {
+			background-color: #23a027c0;
+			color: white;
+			padding: 8px 16px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			border-radius: 5px;
+		}
+		.remove-button {
+			background-color: #f03022f2;
+		}
+	</style>
+</head>
+<body>
+	<h1>Shopping Cart</h1>
+	<table>
+		<tr>
+			<th>Product Name</th>
+            <th>Product Image</th>
+			<th>Price</th>
+			<th>Quantity</th>
+			<th>Action</th>
+		</tr>
+		<tr>
+			<td>The Source - Grenache Rose</td>
+            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNa-HSRpiwUTTPj84UKVCH8Bnf-QrS4EZ1Zg&usqp=CAU" alt=""></td>
+			<td>$122</td>
+			<td><button class="button decrease-quantity-button">-</button> <span class="quantity">1</span> <button class="button increase-quantity-button">+</button></td>
+			<td><button class="button buy-button">Buy</button> <button class="button remove-button">Remove</button></td>
+		</tr>
+		<tr>
+			<td>Donelli Non-Alcoholic Red Wine | Grape Juice</td>
+            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxOwBM6sNlZwKKaTs9VQcaQiq-PBqi7hEyRg&usqp=CAU" alt=""></td>
+			<td>$140</td>
+			<td><button class="button decrease-quantity-button">-</button> <span class="quantity">1</span> <button class="button increase-quantity-button">+</button></td>
+			<td><button class="button buy-button">Buy</button> <button class="button remove-button">Remove</button></td>
+		</tr>
+        <tr>
+			<td>FRIZZANO ROSSO RED SPARKLING WINE</td>
+            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHAvy9SJpPRNfPrRr1_oFkTYWq5Qy187RABA&usqp=CAU" alt=""></td>
+			<td>$108</td>
+			<td><button class="button decrease-quantity-button">-</button> <span class="quantity">1</span> <button class="button increase-quantity-button">+</button></td>
+			<td><button class="button buy-button">Buy</button> <button class="button remove-button">Remove</button></td>
+		</tr>
+        <tr>
+			<td>Penfolds Bin 389</td>
+            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQddHAfmLYwEy_MwzkFhs5vuQKg2qzP5NnWkQ&usqp=CAU" alt=""></td>
+			<td>$209</td>
+			<td><button class="button decrease-quantity-button">-</button> <span class="quantity">1</span> <button class="button increase-quantity-button">+</button></td>
+			<td><button class="button buy-button">Buy</button> <button class="button remove-button">Remove</button></td>
+		</tr>
+        <tr>
+			<td>Silver Oak Cabernet Sauvignon</td>
+            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg2x9YcoQ921ufwmgbVcn1IsDysHRz-aVfIg&usqp=CAU" alt=""></td>
+			<td>$191</td>
+			<td><button class="button decrease-quantity-button">-</button> <span class="quantity">1</span> <button class="button increase-quantity-button">+</button></td>
+			<td><button class="button buy-button">Buy</button> <button class="button remove-button">Remove</button></td>
+		</tr>
+		<!-- we can add more rows for additional products -->
+	</table>
+	<script>
+		//  adding event listener to but product button
+		let buyButtons = document.getElementsByClassName("buy-button");
+		for (let i = 0; i < buyButtons.length; i++) {
+			buyButtons[i].addEventListener("click", function() {
+				
+				alert("Product bought!");
+			});
+		}
+		
+		// adding event listener to the remove buttons
+		let removeButtons = document.getElementsByClassName("remove-button");
+		for (let i = 0; i < removeButtons.length; i++) {
+			removeButtons[i].addEventListener("click", function() {
+				// Replace with code to remove the product
+				alert("Product removed!");
+			});
+		}
+		
+		// adding event listener to increase button
+		let increaseQuantityButtons = document.getElementsByClassName("increase-quantity-button");
+		for (let i = 0; i < increaseQuantityButtons.length; i++) {
+			increaseQuantityButtons[i].addEventListener("click", function() {
+				let quantityElement = this.parentNode.querySelector(".quantity");
+				let quantity = parseInt(quantityElement.innerText);
+				quantity++;
+				quantityElement.innerText = quantity;
+			});
+		}
+		
+        // adding event listener to decrease button
+		let decreaseQuantityButtons = document.getElementsByClassName("decrease-quantity-button");
+	for (let i = 0; i < decreaseQuantityButtons.length; i++) {
+		decreaseQuantityButtons[i].addEventListener("click", function() {
+			let quantityElement = this.parentNode.querySelector(".quantity");
+			let quantity = parseInt(quantityElement.innerText);
+			if (quantity > 1) {
+				quantity--;
+				quantityElement.innerText = quantity;
+			}
+		});
+	}
+    </script>
+</body>
+</html>
+
