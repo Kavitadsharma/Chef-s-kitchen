@@ -12,6 +12,7 @@
         /* border: 3px solid black; */
         display: flex;
         background-color: rgb(253, 250, 243);
+        position:fixed
     }
     .logo{
       width: 10%;
@@ -44,18 +45,22 @@
         margin-right: 185px;
         align-items: center;
         margin-top: 15px;
+        display: flex;
+        justify-content: space-between;
+        
     }
     .bar :nth-child(1){
-        background-color: whitesmoke;
+        background-color:orange;
         align-items: center;
         border: none;
         padding: 15px 15px 15px 15px;
         cursor: pointer;
+        
 
     }
     .bar :nth-child(2){
         cursor: pointer;
-         background-color:orange;
+         background-color:whitesmoke;
         align-items: center;
         color: white;
         border: none;
@@ -152,6 +157,12 @@ h4{
     color: rgb(39, 187, 245);
     font-size: 43px;
 }
+.bar-left{
+    background-color: orange;
+}
+.bar-right{
+    background-color: whitesmoke;
+}
 /* part2  css  completes here  */
 /*  */
 /*  */
@@ -170,24 +181,30 @@ h4{
         </div>
         <div class="navele">
             <div>
-                <h5>ON THE MENU</h5> 
+                <a href="premium_restaurants.html"><h5>ON THE MENU</h5> </a>
+                
             </div>
             <div>
-                 <h5>PRICING</h5>
+                <a href="cart.html">  <h5>PRICING</h5></a>
+               
             </div>
             <div>
-                <h5>WINE</h5>
+                
+                <a href="wine.html"><h5>WINE</h5></a>
             </div>
             <div>
                 <h5>GIFTS</h5>
+                
             </div>
             <div>
-                <h5>MARKET</h5>
+                <a href="market.html"><h5>MARKET</h5></a>
+                
             </div>
         </div>
         <div class="bar">
-            <button>LOG IN </button>
-           <button>SIGN UP</button>
+            <a href="login.html" class="bar-left"><button>LOG IN </button></a>
+            <a href="signup.html" class="bar-rigth"><button>SIGN UP</button></a>
+           
 
         </div>
     </div>
