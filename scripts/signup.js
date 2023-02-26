@@ -15,7 +15,7 @@ function submitform(e){
         password:password,
 
     };
-    alert("signup succeessful")
+  
 
    
     let reglist=JSON.parse(localStorage.getItem("reg-list"))||[]
@@ -24,8 +24,11 @@ function submitform(e){
     localStorage.setItem("reg-list",JSON.stringify(reglist))
 
 }
-document .querySelector("button") .addEventListener("click", redirectFunction);
-function redirectFunction() {
-
-   window.location.replace ("login.html");
+document.getElementById("submit").addEventListener("click", redirectFunction);
+function redirectFunction(e) {
+    
+    e.preventDefault()
+    alert("signup succeessful")
+console.log("sanvi")
+   window.location.replace ("../html/login.html");
 }

@@ -14,7 +14,7 @@ function submitform(e){
         password:password,
 
     };
-    alert("login successful")
+   
    
     let loginlist=JSON.parse(localStorage.getItem("log-list"))||[]
     reglist.push(obj)
@@ -24,6 +24,7 @@ function submitform(e){
 }
 document .querySelector("button") .addEventListener("click", redirectFunction);
 function redirectFunction() {
+    alert("login successful")
 
    window.location.replace ("index.html");
 }
