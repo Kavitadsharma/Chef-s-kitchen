@@ -4,85 +4,85 @@ var data = [
         image : "https://media.blueapron.com/recipes/35783/square_newsletter_images/1674588420-50-0027-5442/0227_2P11_Baked-Chicken-Thighs9154_SQ_Web.jpg?quality=80&width=850&format=pjpg",
         name : "",
         address : "Connaught Place",
-        deal : "Eat with Starters from ₹1899",
+        deal : "Beer & Drinks with Starters from ₹1899",
         price : 1899,
         bought : "674"
     },
     {
         id : 2,
-        image : "https://media.blueapron.com/recipes/35785/square_newsletter_images/1674494683-51-0003-7745/0227_2PV2_Carmalized-Onion-Truffle-Gnocchi_0037_SQ_Web.jpg?quality=80&width=850&format=pjpg",
-        name : "Oven-Baked Creamy Truffle Gnocchi",
+        image : "https://img4.nbstatic.in/tr:w-350/6114a79a1e2731000b7036ee.jpg",
+        name : "Open House Cafe",
         address : "Connaught Place",
-        deal : "Eat with Starters from ₹1299",
+        deal : "Drinks with Starters from ₹1299",
         price : 1299,
         bought : "3,796"
     },
     {
         id : 3,
-        image : "https://media.blueapron.com/recipes/36989/square_newsletter_images/1674587474-50-0008-7008/0227_2P9_Shrimp-Pesto-Pasta_9129_SQ_Web.jpg?quality=80&width=850&format=pjpg",
-        name : "Smothered Tomatillo Burritos",
+        image : "https://img4.nbstatic.in/tr:w-350/620225d73b031b000b53e5fe.jpg",
+        name : "Savannah Bar - The Radisson Blu Plaza",
         address : "Mahipalpur",
-        deal : "Eat with Starters from ₹1895",
+        deal : "Drinks with Starters from ₹1895",
         price : 1895,
         bought : "591"
     },
     {
         id : 4,
-        image : "https://media.blueapron.com/recipes/37059/square_newsletter_images/1674496289-50-0011-8036/0227_2PV1_Smothered-Tomatillo-Burrito_0138_SQ_Web.jpg?quality=80&width=850&format=pjpg",
-        name : "Smothered Tomatillo Burritos",
+        image : "https://img4.nbstatic.in/tr:w-350/61e517ca1e2731000bdc4ee5.jpg",
+        name : "Cafe Pride - Pride Plaza Hotel",
         address : "Aerocity",
-        deal : "Eat Offers from ₹638",
+        deal : "Buffet Offers from ₹638",
         price : 638,
         bought : "1,778"
     },
     {
         id : 5,
-        image : "https://media.blueapron.com/recipes/37060/square_newsletter_images/1674578396-47-0006-0961/0227_2PF_Cajun-Salmon-Asparagus9343_SQ_Web.jpg?quality=80&width=850&format=pjpg",
-        name : "Roasted Cauliflower & Lemon Pasta",
+        image : "https://img4.nbstatic.in/tr:w-350/5c514eeecff47e000de10c84.jpg",
+        name : "Level 2 - Radisson Blu",
         address : "Outer Ring Road, Paschim Vihar",
-        deal : "Eat Offers from ₹849",
+        deal : "Buffet Offers from ₹849",
         price : 849,
         bought : "1,415"
     },
     {
         id : 6,
-        image : "https://media.blueapron.com/recipes/37075/square_newsletter_images/1675354660-50-0002-0993/0509_2P22_Cauliflower-Lemon-Pasta_020_SQ_Web.jpg?quality=80&width=850&format=pjpg",
+        image : "https://img4.nbstatic.in/tr:w-350/5f588bdcb7b01c000b3d91a7.jpg",
         name : "Lord of the Drinks",
         address : "Connaught Place",
-        deal : "Eat with Starters from ₹1429",
+        deal : "Drinks with Starters from ₹1429",
         price : 1429,
         bought : "1,204"
     },
     {
         id : 7,
-        image : "https://media.blueapron.com/recipes/37076/square_newsletter_images/1674579180-48-0016-0225/918_2PM_Steak-Potatoes_87275_WEB_SQ.jpg?quality=80&width=850&format=pjpg",
-        name : "Tamarind-Honey Chicken",
+        image : "https://img4.nbstatic.in/tr:w-350/5e284308d60180000dbbd915.jpg",
+        name : "Fifty9 - Radisson Blu Marina Hotel",
         address : "Connaught Place",
-        deal : "Eat Offers from ₹1500",
+        deal : "Buffet Offers from ₹1500",
         price : 1500,
         bought : "1,410"
     },
     {
         id : 8,
-        image : "https://media.blueapron.com/recipes/37087/square_newsletter_images/1674578088-49-0003-2865/1213_2PP_Seared-Chicken_150_SQ_Web.jpg?quality=80&width=850&format=pjpg",
-        name : "with Carrots & Mashed Potatoes",
+        image : "https://img4.nbstatic.in/tr:w-350/60e4423640e9df000b9f2a24.jpg",
+        name : "Cafe on 3 - Holiday Inn",
         address : "Mayur Vihar Phase 1, Surajmal Vihar",
-        deal : "Eat with Starters from ₹799",
+        deal : "Buffet Offer & Drinks with Starters from ₹799",
         price : 799,
         bought : "1,106"
     },
     {
         id : 9,
-        image : "https://media.blueapron.com/recipes/37097/square_newsletter_images/1674587117-50-0003-6100/0217_2PRE11_Romesco-Chicken_081_SQ_Web.jpg?quality=80&width=850&format=pjpg",
-        name : "Chops & Savory Pan Sauce",
+        image : "https://img4.nbstatic.in/tr:w-350/5fe19ad9c4d55d000b8a2186.jpg",
+        name : "Viva - All Day Dining - Holiday Inn",
         address : "Aerocity",
-        deal : " Eat Menu Meals from ₹3199",
+        deal : "Buffet, Set Menu Meals from ₹3199",
         price : 3199,
         bought : "990"
     },
     {
         id : 10,
-        image : "https://media.blueapron.com/recipes/37098/square_newsletter_images/1674587228-47-0018-2179/0920_2P8_Pork-Chops-Farro_Risotto_467_SQ_Web.jpg?quality=80&width=850&format=pjpg",
+        image : "https://img4.nbstatic.in/tr:w-350/5f5782eab7b01c000b3d8fdf.jpg",
         name : "Warehouse Cafe",
         address : "Connaught Place",
         deal : "Drinks with Starters from ₹2399",
@@ -91,7 +91,7 @@ var data = [
     },
     {
         id : 11,
-        image : "https://media.blueapron.com/recipes/37100/square_newsletter_images/1674588136-46-0020-3421/0618_2PM_Beef-Bibimbap_10215_WEB_SQ.jpg?quality=80&width=850&format=p.jpg",
+        image : "https://img4.nbstatic.in/tr:w-350/62dfd5c5b3c621000b6fbc09.jpg",
         name : "Infinity - Crowne Plaza",
         address : "Mayur Vihar Phase 1, Surajmal Vihar",
         deal : "Buffet Offers from ₹2299",
@@ -100,25 +100,25 @@ var data = [
     },
     {
         id : 12,
-        image : "https://media.blueapron.com/recipes/37097/square_newsletter_images/1674587117-50-0003-6100/0217_2PRE11_Romesco-Chicken_081_SQ_Web.jpg?quality=80&width=850&format=pjpg",
-        name : "Romesco Chicken & Poblano Pepper",
+        image : "https://img4.nbstatic.in/tr:w-350/5fb27d88c4d55d000bf92209.jpg",
+        name : "Food Exchange - Hotel Novotel",
         address : "Aerocity",
-        deal : " Set Menu Meals from ₹4584",
+        deal : "Buffets, Set Menu Meals from ₹4584",
         price : 4584,
         bought : "763"
     },
     {
         id : 13,
-        image : "https://media.blueapron.com/recipes/37115/square_newsletter_images/1674572853-1946-0005-6253/0301_2PV3_Tomato-Curry-Shakshuka_026_SQ_Web.jpg?quality=80&width=850&format=pjpg",
-        name : "Salsa Verde Pork Sandwiches",
+        image : "https://img4.nbstatic.in/tr:w-350/61c44e7f1e2731000ba42909.jpg",
+        name : "NYC - Radisson Blu Plaza Delhi Airport",
         address : "IGI T3 Road, Mahipalpur",
-        deal : " Offers from ₹3999",
+        deal : "Buffet Offers from ₹3999",
         price : 3999,
         bought : "720"
     },
     {
         id : 14,
-        image : "https://media.blueapron.com/recipes/37120/square_newsletter_images/1674494801-50-0008-2723/0227_2P21_Salsa-Verde-Pork-Sandwiches_00_SQ_Web.jpg?quality=80&width=850&format=pjpg",
+        image : "https://img4.nbstatic.in/tr:w-350/6120ad6140e9df000b810d18.jpg",
         name : "Farmer's Basket At Pluck - Hotel Pullman",
         address : "Aerocity",
         deal : "Buffet Offers from ₹4833",
@@ -127,26 +127,26 @@ var data = [
     },
     {
         id : 15,
-        image : "https://media.blueapron.com/recipes/36569/centered_main_dish_images/1675203559-30826-0178-1875/0306_2P19_Soppressata-Calzone_309_Web.jpg?quality=80&width=800https://img4.nbstatic.in/tr:w-350/62d067bdedffcc000b0607da.jpg",
-        name : "Soppressata & Truffle Honey Calzone",
+        image : "https://img4.nbstatic.in/tr:w-350/62d067bdedffcc000b0607da.jpg",
+        name : "The Great Kabab Factory - Radisson Blu Plaza Delhi Airport",
         address : "IGI T3 Road, Mahipalpur",
-        deal : "EAT Offers from ₹2095",
+        deal : "Buffet Offers from ₹2095",
         price : 2095,
         bought : "644"
     },
     {
         id : 16,
-        image : "https://media.blueapron.com/recipes/37026/square_newsletter_images/1675187004-12471-0141-9900/0306_2P11_Beef-Curry-Rice_174_SQ_Web.jpg?quality=80&width=850&format=pjpg",
-        name : "Oven-Baked Beef & Curry Rice",
+        image : "https://img4.nbstatic.in/tr:w-350/60002b4ae1ecca000b032e32.jpg",
+        name : "Dilli Kanteen Kitchen - The Grand",
         address : "Nelson Mandela Road, Vasant Kunj Sector C, Saket",
-        deal : "Eat Offers from ₹1770",
+        deal : "Buffet Offers from ₹1770",
         price : 1770,
         bought : "675"
     },
     {
         id : 17,
-        image : "https://media.blueapron.com/recipes/37165/square_newsletter_images/1675166084-12471-0020-2333/0306_2PV3_Tofu-Vegetables_123_SQ_Web.jpg?quality=80&width=850&format=pjpg",
-        name : "Lo Mein & Marinated Cucumber",
+        image : "https://img4.nbstatic.in/tr:w-350/5cde50f8d60180000dadaaae.jpg",
+        name : "Spring - Radisson Blu",
         address : "Soul City Mall, Sector 13 Dwarka",
         deal : "Buffet Offer from ₹2477",
         price : 2477,
@@ -154,7 +154,7 @@ var data = [
     },
     {
         id : 18,
-        image : "https://media.blueapron.com/recipes/37252/square_newsletter_images/1675185754-30826-0117-9441/0306_FP17_Vegetable-Lo-Mein_225_SQ_Web.jpg?quality=80&width=850&format=pjpg",
+        image : "https://img4.nbstatic.in/tr:w-350/611a21d840e9df000b81087c.jpg",
         name : "The Hangar - Bar & Lounge - Holiday Inn",
         address : "Aerocity",
         deal : "Drinks with Starters from ₹1899",
@@ -163,26 +163,26 @@ var data = [
     },
     {
         id : 19,
-        image : "https://media.blueapron.com/recipes/37252/square_newsletter_images/1675185754-30826-0117-9441/0306_FP17_Vegetable-Lo-Mein_225_SQ_Web.jpg?quality=80&width=850&format=pjpg",
-        name : "Mein & Marinated Cucumber",
+        image : "https://img4.nbstatic.in/tr:w-350/5f5783ba3ea567000b0ac406.jpg",
+        name : "Thyme - The Umrao",
         address : "Surajmal Vihar",
-        deal : "Eat Offers, Set Menu Meals, Beer & Drink with Starters from ₹1499",
+        deal : "Buffet Offers, Set Menu Meals, Beer & Drink with Starters from ₹1499",
         price : 1499,
         bought : "424"
     },
     {
         id : 20,
-        image : "https://media.blueapron.com/recipes/37255/square_newsletter_images/1675165489-12471-0008-6365/1024_2PV2_Lasagna__477_SQ_Web.jpg?quality=80&width=850&format=pjpg",
-        name : "Three Cheese Lasagna",
+        image : "https://img4.nbstatic.in/tr:w-350/5cb82ca8d60180000d7acbbd.jpg",
+        name : "Pavilion 75 - WelcomHotel Dwarka",
         address : "Sector 10 Dwarka",
-        deal : "Eat and drink Offers and Set Menu Meals from ₹1799",
+        deal : "Buffet Offers and Set Menu Meals from ₹1799",
         price : 1799,
         bought : "461"
     },
     {
         id : 21,
-        image : "https://media.blueapron.com/recipes/37259/square_newsletter_images/1675203089-12471-0200-7977/0221_2P12_Seared-Duck_540_SQ_Web.jpg?quality=80&width=850&format=pjpg",
-        name : "Garlic-Caper Chicken",
+        image : "https://img4.nbstatic.in/tr:w-350/6114a7ec40e9df000b66f6eb.jpg",
+        name : "Patio - The Muse Sarovar Portico",
         address : "Bijwasan Road, Saket",
         deal : "Buffet Offers from ₹649",
         price : 649,
@@ -190,7 +190,7 @@ var data = [
     },
     {
         id : 22,
-        image : "https://media.blueapron.com/recipes/37282/square_newsletter_images/1675181471-12471-0100-6372/0930_2PP-W1_Chicken_6272_SQ_Web.jpg?quality=80&width=850&format=pjpg",
+        image : "https://img4.nbstatic.in/tr:w-350/5fb37df45cc6f2000bbb48e2.jpg",
         name : "Stallion - Hotel Pride Plaza",
         address : "Aerocity",
         deal : "Drinks with Starters from ₹999",
@@ -199,8 +199,8 @@ var data = [
     },
     {
         id : 23,
-        image : "https://media.blueapron.com/recipes/37282/square_newsletter_images/1675181471-12471-0100-6372/0930_2PP-W1_Chicken_6272_SQ_Web.jpg?quality=80&width=850&format=pjpg",
-        name : "Garlic-Caper Chicken",
+        image : "https://img4.nbstatic.in/tr:w-350/60631ce19b6019000bcf4b8a.jpg",
+        name : "Cafe Knosh - The Leela Ambience Convention Hotel",
         address : "Maharaja Surajmal Road, Surajmal Vihar",
         deal : "Buffet Offers from ₹750",
         price : 750,
@@ -208,8 +208,8 @@ var data = [
     },
     {
         id : 24,
-        image : "https://media.blueapron.com/recipes/37283/square_newsletter_images/1675167162-1734-0026-5899/0524_2P8_Roy-Yamaguchi-Charred-Gochujang-Pork-Chops_484_cooked_SQ_Web.jpg?quality=80&width=850&format=pjpg",
-        name : "Charred Gochujang  Chops",
+        image : "https://img4.nbstatic.in/tr:w-350/61e5504a278a39000bf7de0a.jpg",
+        name : "India Grill - Hilton Garden Inn",
         address : "Saket",
         deal : "Buffet Offers from ₹2800",
         price : 2800,
@@ -217,8 +217,8 @@ var data = [
     },
     {
         id : 25,
-        image : "https://media.blueapron.com/recipes/37286/square_newsletter_images/1675186568-30826-0129-1501/0311_2PM_Seared-Steaks_050_Square_Web.jpg?quality=80&width=850&format=pjpg",
-        name : "Steaks & Caper Butter",
+        image : "https://img4.nbstatic.in/tr:w-350/62e24adcb3c621000b6af62d.jpg",
+        name : "Cherry Bar - The Leela Ambience Convention Hotel",
         address : "Maharaja Surajmal Road, Surajmal Vihar",
         deal : "Drinks with Starters from ₹799",
         price : 799,
@@ -226,16 +226,16 @@ var data = [
     },
     {
         id : 26,
-        image : "https://media.blueapron.com/recipes/37384/square_newsletter_images/1675810162-48-0021-8476/1017_2P9_Salmon-Walnut-Cilantro-Walnut_218_SQ_Web.jpg?quality=80&width=850&format=pjpg",
-        name : "Seared Salmon & Walnut-Cilantro Sauce",
+        image : "https://img4.nbstatic.in/tr:w-350/62bef269b3c621000b267da6.jpg",
+        name : "Nook - Hotel Aloft",
         address : "AeroCity",
-        deal : "Eat and drink Offers from ₹2360",
+        deal : "Buffet Offers from ₹2360",
         price : 2360,
         bought : "746"
     },
     {
         id : 27,
-        image : "https://media.blueapron.com/recipes/37619/square_newsletter_images/1676335838-48-0023-6968/1227_2P7_Chicken_150_SQ_Web.jpg?quality=80&width=850&format=pjpg",
+        image : "https://img4.nbstatic.in/tr:w-350/62bee7863b031b000b9d659c.jpg",
         name : "Butterroom",
         address : "Epicuria, Nehru Place",
         deal : "Drinks with Starters from ₹2529",
@@ -244,8 +244,8 @@ var data = [
     },
     {
         id : 28,
-        image : "https://media.blueapron.com/recipes/37615/square_newsletter_images/1676388247-48-0114-9427/0320_2P22_Mushroom-Grilled-Cheese_135_SQ_Web.jpg?quality=80&width=850&format=pjpg",
-        name : "Sweet & Spicy Chicken Stir-Fry",
+        image : "https://img4.nbstatic.in/tr:w-350/62b551b4b3c621000b267571.jpg",
+        name : "The Flying Saucer Cafe",
         address : "Epicuria, Nehru Place",
         deal : "Drinks with Starters from ₹1429",
         price : 1429,
@@ -253,8 +253,8 @@ var data = [
     },
     {
         id : 29,
-        image : "https://media.blueapron.com/recipes/37614/square_newsletter_images/1676334956-50-0008-0783/0111_2PM_Zesty-Beef-Gnocchi_342_SQ_Web.jpg?quality=80&width=850&format=pjpg",
-        name : "GCalabrian Beef & Gnocchi",
+        image : "https://img4.nbstatic.in/tr:w-350/60631c4eed895d000bdfc9c1.jpg",
+        name : "Club Cuba - The Leela Ambience Convention Hotel",
         address : "Maharaja Surajmal Road, Surajmal Vihar",
         deal : "Beer & Drinks with Starters from ₹799",
         price : 799,
@@ -262,8 +262,8 @@ var data = [
     },
     {
         id : 30,
-        image : "https://media.blueapron.com/recipes/37612/square_newsletter_images/1676387678-48-0106-3764/0118_FPM-Miso-Butter-Steaks_0400_SQ_Web.jpg?quality=80&width=850&format=pjpg",
-        name : "Miso Butter Steaks",
+        image : "https://img4.nbstatic.in/tr:w-350/62430f9d3b031b000b701986.jpeg",
+        name : "The Illusion Lounge & Bar",
         address : "MGF Metropolitan Mall, Saket",
         deal : "Drinks with Starters from ₹2299",
         price : 2299,
@@ -401,13 +401,54 @@ function displaydata (data) {
         bought.setAttribute("class", "bought");
         bought.innerText = element.bought + " Bought";
 
+        // cart button
+        let cart = document.createElement("button");
+        cart.setAttribute("class", "cart");
+        cart.innerHTML = `<i class="fas fa-shopping-cart"></i> Add to cart`;
+        cart.style.margin = "0 10px";
+        // check if element is already in cart
+        let isAlredyInCart = (JSON.parse(localStorage.getItem("cartdata")) || []).find((element2)=>element2.id == element.id);
+        if(isAlredyInCart) {
+            cart.style.backgroundColor = "#ef534e";
+            cart.style.color = "#ffffff";
+            cart.innerHTML = `<i class="fas fa-shopping-cart"></i> Added to cart`;
+           
+                    cart.innerHTML = `<i class="fas fa-shopping-cart"></i> Already in cart`;
+                    cart.addEventListener("click", ()=>{
+                        window.location.href = "cart.html";
+                    })
+                
+        } else {
+            cart.addEventListener("click", ()=>{
+                    let cartdata = JSON.parse(localStorage.getItem("cartdata"));
+                    if(cartdata == null) {
+                        cartdata = [];
+                    }
+                    let cartdata2 = {
+                        id : element.id,
+                        image : element.image,
+                        name : element.name,
+                        address : element.address,
+                        deal : element.deal,
+                        price : element.price,
+                        bought : element.bought,
+                        quantity : 1
+                    }
+                    cartdata.push(cartdata2);
+                    localStorage.setItem("cartdata", JSON.stringify(cartdata));
+                    cart.innerHTML = `<i class="fas fa-shopping-cart"></i> Already in cart`;
+                    displaydata(data);
+        })  
+        }
+        
+        bought.append(cart);
         deal.append(deals,deals2);
         card.append(image, name, address, deal);
         boughtdiv.append(bought);
         cardcontainer.append(card,boughtdiv);
-        cardcontainer.addEventListener("click", ()=>{
-            window.location.href = "deals.html";
-        })
+        // cardcontainer.addEventListener("click", ()=>{
+        //     window.location.href = "deals.html";
+        // })
         datashowing.append(cardcontainer);
     });
 }
