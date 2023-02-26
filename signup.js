@@ -15,10 +15,17 @@ function submitform(e){
         password:password,
 
     };
+    alert("signup succeessful")
+
    
     let reglist=JSON.parse(localStorage.getItem("reg-list"))||[]
     reglist.push(obj)
    
     localStorage.setItem("reg-list",JSON.stringify(reglist))
 
+}
+document .querySelector("button") .addEventListener("click", redirectFunction);
+function redirectFunction() {
+
+   window.location.replace ("login.html");
 }
