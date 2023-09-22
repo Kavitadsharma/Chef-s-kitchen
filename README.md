@@ -4,3 +4,4 @@ Our food E-Commerce Website is built using the following technologies:
 Frontend: HTML, CSS, JavaScript, React.js
 Backend: Node.js, Express.js
 Database: MongoDB
+![3](https://github.com/Kavitadsharma/Chef-s-kitchen/assets/115460412/98394527-acbd-48b4-90ed-f7af3840f11b)
